@@ -26,7 +26,7 @@ a = 3 # a is a variable name and 3 is an integer data type
 b = 2 # b is a variable name and 3 is an integer data type
 
 # Arithmetic operations and assigning the result to a variable
-total = a + b
+total = a + b 
 diff = a - b
 product = a * b
 division = a / b
@@ -103,13 +103,13 @@ print('True and True: ', True and True)
 print('True or False:', True or False)
 
 # Another way comparison 
-print('1 is 1', 1 is 1)                   # True - because the data values are the same
-print('1 is not 2', 1 is not 2)           # True - because 1 is not 2
+print('1 is 1', 1 == 1)                   # True - because the data values are the same
+print('1 is not 2', 1 != 2)           # True - because 1 is not 2
 print('A in Asabeneh', 'A' in 'Asabeneh') # True - A found in the string
 print('B in Asabeneh', 'B' in 'Asabeneh') # False -there is no uppercase B
 print('coding' in 'coding for all') # True - because coding for all has the word coding
 print('a in an:', 'a' in 'an')      # True
-print('4 is 2 ** 2:', 4 is 2 ** 2)   # True
+print('4 is 2 ** 2:', 4 == 2 ** 2)   # True
 
 print(3 > 2 and 4 > 3) # True - because both statements are true
 print(3 > 2 and 4 < 3) # False - because the second statement is false
@@ -122,3 +122,50 @@ print(not True)      # False - Negation, the not operator turns true to false
 print(not False)     # True
 print(not not True)  # True
 print(not not False) # False
+
+
+
+#Exercises 3 
+
+age = 25
+height = 164.592
+
+complex_num = 25 + 15j
+
+
+'''
+def areaOfTriangle(base,height):
+    return int(0.5 * base * height) 
+
+base = int(input('Enter base: '))
+height = int(input('Enter height: '))
+print(f'The area of the tringle is {areaOfTriangle(base,height)}')
+
+
+def perimeterOfTriangle(a,b,c):
+    return a + b + c 
+
+a = int(input('Enter side a:'))
+b = int(input('Enter side b:'))
+c = int(input('Enter side c:'))
+print(f'The perimeter of the triangle is {perimeterOfTriangle(a,b,c)}')
+'''
+
+print('Python and Dragon length not same : ', len('python') != len('dragon'))
+print( 'jargon' in 'I hope this course is not full of jargon.')
+
+
+# This is checking if number is even or not 
+user_input = int(input('Enter in a number: '))
+
+is_even = user_input % 2 
+
+print(f'The number you entered in is {is_even == 0}')
+
+
+e1 = 7 // 3 
+e2 = int(2.7)
+print(e1 == e2) 
+
+
+
