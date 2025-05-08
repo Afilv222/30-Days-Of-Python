@@ -65,6 +65,7 @@ language = 'Python'
 first_three = language[0:3] # starts at zero index and up to 3 but not include 3
 last_three = language[3:6]
 print(last_three) # hon
+
 # Another way
 last_three = language[-3:]
 print(last_three)   # hon
@@ -73,8 +74,13 @@ print(last_three)   # hon
 
 # Skipping character while splitting Python strings
 language = 'Python'
-pto = language[0:6:2] # 
+# taking elements starting at index start, up to—but not including—index stop, stepping through the sequence in increments of step.
+pto = language[0:6:2] # sequence[start:stop:step]
 print(pto) # pto
+
+test = 'Afil Vidyasagar'
+print(test[0:9:3]) #Ali
+
 
 # Escape sequence
 print('I hope every one enjoying the python challenge.\nDo you ?') # line break
@@ -168,7 +174,7 @@ print(challenge.find('th')) # 0
 challenge = 'Thirty'
 print(challenge.isdigit()) # False
 challenge = '30'
-print(challenge.digit())   # True
+#print(challenge.digit())   # True
 
 # isdecimal():Checks decimal characters
 
@@ -210,13 +216,13 @@ print('ten'.isnumeric())    # False
 # join(): Returns a concatenated string
 
 web_tech = ['HTML', 'CSS', 'JavaScript', 'React']
-result = '#, '.join(web_tech)
+result = '# '.join(web_tech)
 print(result) # 'HTML# CSS# JavaScript# React'
 
 # strip(): Removes both leading and trailing characters
 
 challenge = ' thirty days of python '
-print(challenge.strip('y')) # 5
+print(challenge.strip(' ')) # 5
 
 # replace(): Replaces substring inside
 
@@ -246,3 +252,52 @@ challenge = 'thirty days of python'
 print(challenge.startswith('thirty')) # True
 challenge = '30 days of python'
 print(challenge.startswith('thirty')) # False
+
+
+test = 'Afil Vidyasagar'
+print(test[0:9:3]) #Ali
+
+s1 = 'Thirty'
+s2 = 'Days'
+s3 = 'Of'
+s4 = 'Python' 
+full_word = '{} {} {} {}'.format(s1,s2,s3,s4)
+print(full_word)
+
+c1 = 'Coding'
+c2 = 'For'
+c3 = 'All'
+full_word2 = '{} {} {}'.format(c1,c2,c3)
+print(full_word2)
+
+sliced_word = full_word2[7:]
+print(sliced_word)
+
+check = sliced_word.find('Coding')
+
+if(check != -1):
+    print(f'find at index {check}')
+else:
+    print('Not found')
+
+
+replace_coding = full_word2.replace('Coding','Python')
+
+word_spliting = full_word2.split(' ')
+
+print(word_spliting)
+
+last_index = full_word2.rfind('A')
+print(f'Last index of the string {test}')
+
+s = "Coding For All"
+print(repr(s[10]))
+
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+first_occur = sentence.index('because')
+print(first_occur)
+
+last_occur = sentence.rindex('because')
+print(last_occur)
+
+
